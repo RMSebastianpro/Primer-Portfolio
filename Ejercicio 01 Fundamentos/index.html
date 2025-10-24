@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Programación</title>
+    <meta name="description" content="Entendiendo los Fundamentos de HTML y CSS">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="main-header__logo">
+            Mi Marca
+        </div>
+        <nav class="main-nav" aria-label="Navegación principal">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Inicio</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">Servicios</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" class="main-nav__link">acerca de</a>
+                </li>
+            </ul>   
+        </nav>
+
+        <button class="main-header-btn">Carrito</button>
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="hero__title">Bienvenidos a mi sitio web</h1>
+            <p class="hero__description">Aquí Encontraras mis Primeros Trabajos</p>
+            <div class="fond-form">
+                <form action="#" method="post">
+                    <button class="hero__search-btn" aria-label="Botón de Búsqueda"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg></button>
+                    <input type="text" name="search" placeholder="Buscar..." class="hero__search-input">
+                </form>
+            </div>
+        </section>
+
+        <section class="container">
+
+            <h2>Sección de Tarjetas</h2>
+
+            <div class="card-container">
+                <article class="card">
+                    <h3>Titulo de la tarjeta</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et deleniti sapiente, aperiam maxime neque eum quod! Cumque atque odit deserunt magnam blanditiis molestias quae harum quos. Amet sunt quidem quas.</p>
+                    <a href="#" class="card__link">Ver más</a>
+                </article>
+                <article class="card">
+                    <h3>Titulo de la tarjeta</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fugiat sunt autem a cupiditate tenetur maiores veniam quam consectetur ad labore nam, atque repellat id quae minima pariatur facilis cum?</p>
+                    <a href="#" class="card__link">Ver más</a>
+                </article>
+                <article class="card">
+                    <h3>Titulo de la tarjeta</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam temporibus id maxime quidem ex, iure vel veniam repellat ipsam nisi sapiente, aliquam dignissimos qui, similique aperiam nihil assumenda quasi fuga.</p>
+                    <a href="#" class="card__link">Ver más</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Derechos de autor &copy; 2025 Mi Marca. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
