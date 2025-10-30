@@ -1,0 +1,121 @@
+:root {
+    --header-footer-hero: #004D40;
+    --main-content: #F7F7F7;
+    --text-color: #212121;
+    --second-acent: #4DB6AC;
+    --acent: #FF6F00;
+    --spacing: 15px;
+    --shadow: 0 0 15px #3337;
+    --border-radius: 25px;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: var(--main-content);
+}
+
+/*Header Section*/
+
+.header {
+    background-color: var(--header-footer-hero);
+    padding: var(--spacing);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo {
+    height: 50px;
+}
+
+.header-nav__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.nav-item__link {
+    background-color: var(--second-acent);
+    color: var(--main-content);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+.nav-item__link:hover {
+    background-color: #4DB6ACcc;
+    color: var(--text-color);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.header-btn {
+    background-color: var(--second-acent);
+    color: var(--main-content);
+    font-weight: bold;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.header-btn:hover {
+    background-color: #4DB6ACcc;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: var(--text-color);
+    border-radius: 10px;
+}
+
+/*Hero Section*/
+
+.hero {
+    background-color: var(--header-footer-hero);
+    padding: 20px 20px;
+    text-align: center;
+    color: var(--main-content);
+    margin-top: 10px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    background-color: var(--acent);
+    color: var(--main-content);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+    background-color: #FF6F00cc;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /* Added border-radius to hover state */
+    cursor: pointer;
+}

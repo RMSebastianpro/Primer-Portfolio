@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions | Animation</title>
+    <meta name="description" content="Tarea de Transiciones y Animaciones aplicando todos los conocimientos aprendidos anteriormente.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header role="banner" class="header">
+        <a href="#" role="img" aria-label="Logo de la página">
+            <img src="#" alt="Logo de la página" class="header-logo">
+        </a>
+        <nav class="header-nav">
+            <ul class="header-nav__list">
+                <li class="nav-item"><a href="#" class="nav-item__link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-item__link">Servicios</a></li>
+                <li class="nav-item"><a href="#" class="nav-item__link">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <button type="button" class="header-btn">Log In</button>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Descubre Nuestros Servicios</h1>
+            <p>Ofrecemos soluciones innovadoras para tus necesidades.</p>
+            <button type="button" class="hero-btn">Explorar Servicios!</button>
+        </section>
+
+        <section class="featured-section">
+            <article class="featured-card">
+                <h2>Servicio Destacado 1</h2>
+                <p>Descripción breve del servicio 1.</p>
+                <a href="#" class="btn">Más Información</a>
+            </article>
+            <article class="featured-card">
+                <h2>Servicio Destacado 2</h2>
+                <p>Descripción breve del servicio 2.</p>
+                <a href="#" class="btn">Más Información</a>
+            </article>
+            <article class="featured-card">
+                <h2>Servicio Destacado 3</h2>
+                <p>Descripción breve del servicio 3.</p>
+                <a href="#" class="btn">Más Información</a>
+            </article>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contáctanos</h2>
+            <form action="#" method="POST">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <select name="servicio" id="servicio">
+                        <option value="1">Selecciona un servicio.</option>
+                        <option value="2">Servicio Destacado 1</option>
+                        <option value="3">Servicio Destacado 2</option>
+                        <option value="4">Servicio Destacado 3</option>
+                    </select>
+
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+            </form>
+
+            <button type="submit" class="btn">Enviar Mensaje</button>
+        </section>
+    </main>
+
+    <footer class="footer"> 
+        <p>&copy; Rodrigo Sebastian Martinez 2025 | Derechos Reservados</p>
+    </footer>
+</body>
+</html>
