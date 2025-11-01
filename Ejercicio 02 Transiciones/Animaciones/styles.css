@@ -41,21 +41,20 @@ body {
     box-sizing: border-box;
 }
 
-.nav-item__link {
+.header-nav__link {
     background-color: var(--second-acent);
     color: var(--main-content);
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-    padding: 6px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.nav-item__link:hover {
+.header-nav__link:hover {
     background-color: #4DB6ACcc;
     color: var(--text-color);
-    padding: 12px;
-    border-radius: 10px;
+    transform: scale(1.1);
 }
 
 .header-btn {
@@ -109,13 +108,71 @@ body {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.3s ease-in-out;
+    animation: pulse-color 2s ease-in-out infinite;
+    cursor: pointer;
 }
 
-.hero-btn:hover {
-    background-color: #FF6F00cc;
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border-radius: 10px; /* Added border-radius to hover state */
+@keyframes pulse-color {
+    0% {
+        background-color: var(--acent);
+        transform: scale(1);
+    }
+    50% {
+        /* Cambia color y escala para el efecto de "pulso" */
+        background-color: var(--second-acent); 
+        transform: scale(1.05);
+    }
+    100% {
+        background-color: var(--acent);
+        transform: scale(1);
+    }
+}
+
+.featured-section {
+    background-color: var(--header-footer-hero);
+    text-align: center;
+    color: var(--main-content);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+/* 1. Estilos Base de la Tarjeta */
+.featured-card {
+    background-color: var(--main-content);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: left;
     cursor: pointer;
+    height: 100%;
+    /* ¡CLAVE! Hacemos la transición en DOS propiedades */
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+    
+    /* Sombra inicial sutil (estado de reposo) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* 2. Estilos al Hacer Hover */
+.featured-card:hover {
+    /* ✅ Movimiento hacia arriba (Alto Rendimiento) */
+    transform: translateY(-8px); 
+    
+    /* ✅ Sombra dramática para el efecto de elevación */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form {
+    
+    background-color: var(--acent); 
+    text-align: center;
+    color: var(--main-content);
+}
+
+.contact-form h2 {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: bold;
 }
