@@ -1,0 +1,24 @@
+/* ---------------------------------------------------- */
+/* 0. BASE Y VARIABLES CSS (Custom Properties) */
+/* ---------------------------------------------------- */
+:root {
+    /* Colores primarios (de tu tema original) */
+    --color-primary: #004D40; /* Verde Oscuro (Header, Footer, Fondo) */
+    --color-secondary: #4DB6AC; /* Verde Claro (Acento) */
+    --color-accent: #FF6F00; /* Naranja (Botones/Acción) */
+    --color-surface: #F7F7F7; /* Blanco/Gris Claro (Fondo Principal) */
+    --color-text-dark: #212121; /* Texto Oscuro */
+    --color-text-light: white; /* Texto Claro */
+    
+    /* Espaciado y Sombra */
+    --spacing-base: 15px;
+    --shadow-subtle: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-elevated: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Aplicación global de box-sizing para consistencia */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
